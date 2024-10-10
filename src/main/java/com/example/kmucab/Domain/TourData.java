@@ -1,10 +1,14 @@
-package com.example.kmucab.Repository;
+package com.example.kmucab.Domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import jakarta.persistence.*;
+import lombok.*;
 
+import java.util.Date;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@Data
 @Entity
 public class TourData {
 
@@ -13,7 +17,18 @@ public class TourData {
     private Long id;
 
     private String title;
+    private int areaCode;
+    private int singunguCode;
+    private String mapx;
+    private String mapy;
     private String address;
+    private int contentid;
+    private int contenttypeid;
+    private String tel;
+    private Date modifiedtime;
+    private Date eventstartdate;
+    private Date eventenddate;
+    private String summary;
 
     // getters and setters
 }
